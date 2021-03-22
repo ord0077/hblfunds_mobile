@@ -1,0 +1,294 @@
+.platform-ios{
+    .stocksHome{
+        .scroll-content{
+            margin-top:59px;
+        @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2) { 
+            margin-top: 85px ;
+        }
+          @media only screen 
+          and (device-width : 375px) 
+          and (device-height : 812px) 
+          and (-webkit-device-pixel-ratio : 3) { 
+              
+            margin-top: 60px ;
+            
+          }
+        }
+    }
+    
+}
+
+.stocksHome{
+    .date-col{
+       font-size: 11px; 
+       ion-col{
+           padding: 5px;
+          
+        &:nth-child(1){
+            background-color: #f4f4f4;
+           
+        }
+        &:nth-child(2){
+            background-color: #f4f4f4; 
+        }
+        &:nth-child(3){
+            background-color: #f4f4f4; 
+        }
+       }
+       
+    }
+    background: #f4f4f4;
+    height: 100%;
+    .grid{
+        height: 100%;
+        .row{
+           
+            .container-img{
+                &::before{
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 70%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+                    z-index: 999999;
+                    position: absolute;
+                }
+            
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-size:cover;
+                background-position: center center;
+                opacity:1;
+                background-color: #000 !important;
+                z-index: -1;
+                
+              
+            }
+            
+        }
+        .news-content{
+           // margin-top: 90%;
+           position: absolute;
+           bottom: 5%;
+            p{
+                color: #ffffff;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            img{
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+            .mkt-summary{
+        
+                div{
+                    width: 31.33%;
+                    text-align: center;
+                    &:first-child{
+                        border-right-width: 0;
+                        
+                    }
+                    &:last-child{
+                        border-left-width: 0;
+                        //text-align-last: left;
+                    }
+                    border: 2px solid #fff;
+                    padding: 10px 10px;
+                    font-size: 20px;
+                    color: #ffffff;
+                }
+            }
+        }
+    
+    }
+    .scroll-content{
+        margin-top: 103px;
+        ion-segment{
+            background: #008269;
+            .segment-button{
+                position: relative;
+                z-index: 99999;
+                color: #fff;
+                &.segment-activated{
+                    border-color: #000;
+                }
+            }
+        }
+    }
+
+    .summary-page{
+      .summary-tab{
+          div{
+              background-color: #fff;
+              padding: 5px 20px;
+              border: 1px solid #ccc;
+              color: #008269;
+              &:first-child{
+                  border-right-width: 0;
+              }
+              &:last-child{
+                  border-left-width: 0;
+              }
+              &:active,&:visited{
+                  background-color: #008269;
+              }
+              &.active{
+                background-color: #008269;
+                color: #fff;
+              }
+          }
+      }
+      .market-highlight{
+          h2{
+              font-size: 18px;
+              background-color: #fff;
+              margin-bottom: 0;
+              padding: 10px 20px;
+              border: 1px solid #ccc;
+              border-radius: 8px 8px 0px 0px;
+              border-bottom-width: 0;
+          }
+          ion-row:last-child{
+              display: none !important;
+          }
+          ion-row{
+             
+              &:last-child{
+                  border-bottom: 1px solid #000;
+              }
+              background-color: #fff;
+              border-left: 1px solid #ccc;
+              border-right: 1px solid #ccc;
+              &:nth-child(even){
+                  background-color: #d9ecea;
+                  border-top: 1px solid #ccc;
+                  border-bottom-width: 0;
+              }
+              &:nth-child(odd){
+                  background-color: #fff;
+                  border-top: 1px solid #ccc;
+              }
+          }
+      }
+    }
+
+    .indices{
+        .market-status{
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+            .item-inner{
+                margin: 0;
+                padding: 0;
+                .label{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .row{
+               
+            ion-col{
+              
+                background-color: #ccc;
+                font-size: 11px;
+                padding: 10px 5px;
+                max-width: 25%;
+                width: 25%;
+
+            }
+            }
+           
+           
+        }
+    }
+    .stock-summary{
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: -2px 3px 13px 0px #ccccccbf;
+        [col-10]{
+            .row{
+                &:first-child{
+                    font-size: 33px;
+                    font-weight: 700;
+                   
+                }
+                &:nth-child(2){
+                    color: #008269;
+                    .market-current{
+                        font-size: 15px;
+                        color: #000;
+                        display: inline-block;
+                        padding: 5px;
+                    }
+                    ion-icon[name="md-arrow-round-down"]{
+                        color:#cc0000;
+                        font-size: 14px;
+                        display: inline-block;
+                        padding: 5px;
+                        margin-top: 4px;
+                    }
+                    ion-icon[name="md-arrow-round-up"]{
+                        color:#008269;
+                        font-size: 14px;
+                        display: inline-block;
+                        padding: 5px;
+                        margin-top: 2px;
+                    }
+                    .market-up-down{
+                        display: inline-block;
+                        padding:6px;
+                    }
+
+                }
+                &:nth-child(3){
+                    font-size: 11px;color: rgb(173, 173, 173);
+                }
+                &:nth-child(4){
+                    font-size: 11px;color: #888888;
+                }
+            }
+        }
+        [col-2]{
+            ion-icon[ios="ios-arrow-forward"]{
+                color:#008269;
+                font-size: 45px;
+                display: inline-block;
+                padding: 5px;
+                margin-top: 26px;
+                margin-left: 26px;
+                
+            }
+        }
+    }
+
+    
+   
+}
+
+.disclaimer-item{
+    margin: 0;
+    .label-md{
+        margin: 0;
+        white-space: normal;
+        line-height:1.2;
+        
+    }
+}
+
+.psx-disclaimer{
+    white-space: normal;
+    padding: 20px;
+    background-color: #fff;
+}

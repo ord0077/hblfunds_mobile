@@ -1,0 +1,134 @@
+<style>
+  p {
+    font-size: 12px !important;
+    color: #000;
+  }
+</style>
+  
+<ion-header class="sidemain">
+  <ion-toolbar>
+    <div class="flex">
+      <div>
+        <img src="assets/imgs/sidebar-img.png" alt="">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="sidemain-content">
+  <ion-list>
+    <ion-item (click) = "goto(AboutPage)" menuToggle>
+      <ion-thumbnail item-start>
+        <span class="ico-bill"></span>
+      </ion-thumbnail>
+      <p>HBL AM</p>
+    </ion-item>
+    <ion-item menuToggle (click) = "goto(navComponent)">
+      <ion-thumbnail item-start>
+        <span class="ico-bar-chart"></span>
+      </ion-thumbnail>
+      <p>NAVs</p>
+    </ion-item>
+    <ion-item menuToggle (click)='goto(StocksHome)'>
+      <ion-thumbnail item-start>
+          <ion-icon ios="ios-trending-up" md="md-trending-up"></ion-icon>
+      </ion-thumbnail>
+      <p>Stock Market</p>
+    </ion-item>
+    <ion-item menuToggle (click) = "goto(reportsComponent)">
+      <ion-thumbnail item-start>
+        <span class="ico-bill"></span>
+      </ion-thumbnail>
+      <p>Reports</p>
+    </ion-item>
+    <ion-item menuToggle (click) = "goto(AmlFunds)">
+      <p style="font-weight:600; font-size:16px !important;color:#008269 ;">HBL AMC Funds</p>
+    </ion-item>
+
+    <ion-item (click) = "goto(moneyMarkettab)" menuToggle>
+      <ion-thumbnail item-start>
+        <span class="ico-dollar"></span>
+      </ion-thumbnail>
+      <p>Fixed Income Funds</p>
+    </ion-item>
+
+    <ion-item (click) = "goto(equityFunds)" menuToggle>
+      <ion-thumbnail item-start>
+        <span class="ico-education"></span>
+      </ion-thumbnail>
+      <p>Equity Funds</p>
+    </ion-item>
+
+    <ion-item (click) = "goto(shariahCompliantFunds)" menuToggle>
+      <ion-thumbnail item-start>
+        <span class="ico-islamic-fund"></span>
+      </ion-thumbnail>
+      <p>Shariah Compliant Funds</p>
+    </ion-item>
+    <ion-item (click) = "goto(financialPlans)" menuToggle>
+      <ion-thumbnail item-start>
+        <span class="ico-funds"></span>
+      </ion-thumbnail>
+      <p>Fund Of Funds</p>
+    </ion-item>
+
+    <ion-item (click) = "goto(voluntaryPensionScheme)" menuToggle>
+      <ion-thumbnail item-start>
+        <span class="ico-money-jar"></span>
+      </ion-thumbnail>
+      <p>Voluntary Pension Funds</p>
+    </ion-item>
+    <ion-item (click) = "goto(separatelyManagedAccounts)" menuToggle>
+      <ion-thumbnail item-start>
+        <span class="ico-profile"></span>
+      </ion-thumbnail>
+      <p>Separately Managed<wbr> Accounts</p>
+    </ion-item>
+
+  
+
+    <ion-item menuToggle (click) = "goto(CalculatorPage)">
+      <p style="font-weight:600; font-size:16px !important;color:#008269 ;">Calculators</p>
+    </ion-item>
+
+    <ion-item menuToggle (click) = "goto(TaxCalculator)">
+      <ion-thumbnail item-start>
+        <span class="ico-calculator"></span>
+      </ion-thumbnail>
+      <p>Tax Saving</p>
+    </ion-item>
+
+    <ion-item menuToggle (click) = "goto(RetirementCalculator)">
+      <ion-thumbnail item-start>
+        <span class="ico-pention"></span>
+      </ion-thumbnail>
+      <p>Retirement Planning</p>
+    </ion-item>
+
+    <ion-item menuToggle (click) = "goto(RiskCalculator)">
+      <ion-thumbnail item-start>
+        <span class="ico-checklist"></span>
+      </ion-thumbnail>
+      <p>Choose a Product</p>
+    </ion-item>
+
+    
+    <ion-item menuToggle >
+      <p style="font-weight:600; font-size:16px !important;color:#008269 ;">Customer Care</p>
+    </ion-item>
+
+
+    <ion-item menuToggle (click) = "goto(InvestorEducation)">
+      <ion-thumbnail item-start>
+        <span class="ico-fund-education"></span>
+      </ion-thumbnail>
+      <p>Investor Education</p>
+    </ion-item>
+    <ion-item menuToggle (click) = "goto(InvestorServices)">
+        <ion-thumbnail item-start>
+          <span class="ico-coins"></span>
+        </ion-thumbnail>
+        <p>Investor Services</p>
+      </ion-item>
+  </ion-list>
+</ion-content>

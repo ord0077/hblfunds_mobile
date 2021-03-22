@@ -1,0 +1,41 @@
+
+
+.money-market {
+
+
+  .scroll-content {
+    padding: 56px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .para {
+    color: #000;
+    p {
+      font-size: 14px !important;
+      padding: 4%;
+      padding-left: 10%;
+      padding-right: 10%;
+      line-height: 1.5;
+    }
+  }
+  .btns {
+    padding-left: 5%;
+    padding-right: 5%;
+    button {
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 0;
+      span {
+        justify-content: space-between;
+        font-weight: 900;
+        text-transform: capitalize;
+      }
+    }
+    button:nth-child(even) {
+      background-color: map-get($colors, hbl-green);
+    }
+    button:nth-child(odd) {
+      background-color: map-get($colors, hbl-black);
+    }
+  }
+}

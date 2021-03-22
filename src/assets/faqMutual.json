@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "What is a Mutual Fund?",
+    "detail": "Mutual Fund is a pool of investment / savings of a number of investors who have a common financial goal. These funds are a diversified portfolio of financial instruments (equity, debt or money market) and the pool (total size of the fund) are invested in these markets to help meet investment objectives. The income earned through these investments (capital appreciation) is shared with the unit holders in proportion to the number of units owned by them. Mutual Funds are a suitable investment for the common man as it offers an opportunity to invest in a diversified, professionally managed basket of securities."
+  },
+  {
+    "id": 2,
+    "name": "What are the benefits of investing in a Mutual Fund?",
+    "detail": "The benefits of investing in a Mutual Fund are as follows. Professional Fund Managers: Your investment is managed by fund managers who have a high level of educational and professional credentials and appropriate investment managerial experience. Diversification: Mutual Funds aim to reduce the volatility of returns and the risk by diversification. They invest in a number of companies across a broad section of industries / sectors. With a small investment, an investor can achieve diversification that would have otherwise not been possible if the investor invests directly in those securities. Liquidity: Open-ended Mutual Funds are priced daily and can be redeemed anytime. This mean that investors can redeem their holdings in Mutual Funds anytime. Low transaction costs: Since Mutual Funds are a pool of money of many investors, the amount of investment made in securities is large. A small management fee is charged by the company, which if invested directly would have cost an individual investor a lot. Transparency: Prices of open ended Mutual Funds are announced daily. The portfolio is also disclosed in the monthly Fund Managers Report."
+  },
+  {
+    "id": 3,
+    "name": "How does a mutual fund produce income for the investors?",
+    "detail": "When a fund invests in debt, it requires interest payments at specific times. A fund investing in the stock of corporation receives whatever cash dividends that company pays. Interest payments and dividend income by law must be passed through to the fund’s shareholders i.e. to you. You can even have that income reinvested in more fund shares. Also, when a fund actually sells a stock or bond that has increased in value, the fund realizes a capital gain. Periodically, the fund will distribute such gains to its shareholders in the form of dividend warrants unless you have instructed it to reinvest the gains."
+  },
+  {
+    "id": 4,
+    "name": "Is my principal protected?",
+    "detail": "Unlike a bank deposit, the value of your principal can rise or fall. People invest in mutual funds because of the fact they want their principal to rise over time. The value of a fund depends on the value of the securities it owns. Stocks and bonds fluctuate in value and therefore so do mutual funds."
+  },
+  {
+    "id": 5,
+    "name": "Can I lose principal in a Mutual Funds Investment?",
+    "detail": "Because the value of a fund fluctuates, when you sell (“redeem”) your shares, the price may be more or less than what you paid for it. Just as the value of your home doesn’t always stay the same, neither does the value of a mutual fund. If you sell your home soon after you buy it, chances are greater you won’t make a profit. The same is true for mutual funds which is a long-term investment."
+  },
+  {
+    "id": 6,
+    "name": "Should I Invest funds that I will need shortly?",
+    "detail": "Probably not. Most people want assurance money they immediately need will be there when they need it. Mutual funds (except for money market funds) by their nature fluctuate in value and therefore may not be the most comfortable place for your emergency funds."
+  },
+  {
+    "id": 7,
+    "name": "How do I decide which Mutual Fund I should invest in?",
+    "detail": "Talk to your investment representative about your needs, why you’re making the investment in the first place. The Representative will identify those funds that provide the best combination of return and safety for you and what you want to accomplish with the investment."
+  },
+  {
+    "id": 8,
+    "name": "What Types of Mutual Funds are generally available?",
+    "detail": "An Open-ended Fund is one that is available for subscription all through the year. These do not have a fixed maturity. Investors can conveniently buy and sell units at Net Asset Value (NAV) related prices. A Close-ended Fund has a specified maturity period, which generally ranges from 2 to 10 years. The fund is open for subscription only during a specified Initial Public Offer (IPO). Investors can invest in the scheme at the time of the IPO."
+  },
+  {
+    "id": 9,
+    "name": "What is Net Asset Value (NAV)?",
+    "detail": "NAV is calculated by summing the current market values of all securities held by the fund, adding in cash and any accrued income, then subtracting liabilities and dividing the result by the number of units outstanding. Net Asset Value is the market value of the assets of the scheme minus its liabilities. Per unit NAV is the net asset value of the scheme divided by the number of units outstanding on the Valuation Date."
+  },
+  {
+    "id": 10,
+    "name": "What is a Front End load?",
+    "detail": "Front End Load is a charge collected by few Mutual Funds at the time of investment. A small % is charged on the investment. These loads are generally charged on Income and equity based funds."
+  },
+  {
+    "id": 11,
+    "name": "What is a Back End load?",
+    "detail": "Back End Load is a charge collected by few Mutual Funds at the time of redemption. A small % is charged when the investor redeems their investment."
+  },
+  {
+    "id": 12,
+    "name": "What is transfer of funds?",
+    "detail": "Mutual Funds provide the investor with an option to transfer his investment from one fund to another. This facility is provided to meet his changing investment needs, changed risk profile or evolving financial goal."
+  },
+  {
+    "id": 13,
+    "name": "Does investing in a Mutual Fund mean investing in stock market?",
+    "detail": "Every Mutual Fund is bound by the investment objectives outlined by it in its offering document. The investment objectives specify the class of securities a Mutual Funds can invest in. Mutual Funds can be divided into various types depending on asset classes. They can also invest in debt instruments such as bonds, money market and government securities apart from equity."
+  },
+  {
+    "id": 14,
+    "name": "How can I purchase units of a mutual fund?",
+    "detail": "You can purchase units of a mutual fund by filling a simple application form, which is attached at the end of this document or can also be downloaded from our website www.hblasset.com. or by visiting any of our offices, You can also call at HBL AML Office (021) 111-425-262 to have a copy of the form delivered to your address."
+  },
+  {
+    "id": 15,
+    "name": "What document will I receive?",
+    "detail": "An Account Statement is sent to you by post stating the number of units allotted, not later than 15 days from the date of purchase."
+  }
+]

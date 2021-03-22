@@ -1,0 +1,118 @@
+<ion-content class="calculator">
+  <div class='image-info'>
+    <div>
+      <span class="ico-pention"></span>
+    </div>
+    <div>
+      <h1 class="hh">Retirement Planning Calculator</h1>
+    </div>
+  </div>
+
+  <div class="para">
+    <p>
+
+
+      Saving for retirement is the most important thing you do with your money. Not sure how much you should save
+      now to reach your retirement target? You can use our retirement planning calculator to find out the future
+      value of your savings.
+    </p>
+  </div>
+
+  <div class="form-calculator">
+    <ion-list no-lines>
+
+      <ion-item>
+        <ion-label stacked>Monthly Income PKR *</ion-label>
+        <ion-input type="number" placeholder="(e.g: 50,000)" name="monthlyIncome" [(ngModel)]="data.monthlyIncome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Contribution *</ion-label>
+        <ion-input type="number" placeholder="(e.g: 10%)" name="contribution" [(ngModel)]="data.contribution"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Increment (Annual) *</ion-label>
+        <ion-input type="number" placeholder="(e.g: 10%)" name="annual" [(ngModel)]="data.annual"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Present Age < 70 Years *</ion-label>
+        <ion-input type="number" placeholder="(e.g: 35)" name="present" [(ngModel)]="data.present"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Retirement Age ≤ 75 Years *</ion-label>
+        <ion-input type="number" placeholder="(e.g: 65)"  name="retirement" [(ngModel)]="data.retirement"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Life Expectancy *</ion-label>
+        <ion-input type="number" placeholder="(e.g: 75)"  name="life" [(ngModel)]="data.life"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button block (click)="calculate()">Calculate</button>
+      </ion-item>
+
+      <ion-item *ngIf="result && result.tenor">
+        <table>
+          <tr>
+            <th>Expected Future Saving:</th>
+          </tr>
+        </table>
+        <table>
+        <tr>
+          <td>Expected Return p.a.</td>
+          <td>{{result.expectedReturn}}%</td>
+        </tr>
+        <tr>
+          <td>Tenor (Years)</td>
+          <td>{{result.tenor}}</td>
+        </tr>
+        <tr>
+          <td>Total Contribution</td>
+          <td>{{result.contribution  | number:0}}</td>
+        </tr>
+        <tr>
+          <td>Total profit</td>
+          <td>{{result.profit  | number:0}}</td>
+        </tr>
+        <tr>
+          <td>Total Balance</td>
+          <td>{{ result.balance  | number:0}}</td>
+        </tr>
+        <tr>
+          <td>Encashable On Retirement</td>
+          <td>{{result.encashableRetirement  | number:0}}</td>
+        </tr>
+        <tr>
+          <td>Pensionable After Retirement</td>
+          <td>{{result.pensionableRetirement  | number:0}}</td>
+        </tr>
+        <tr>
+          <th>Expected Pension Returns Upto: </th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Age 65</td>
+          <td>{{result.age65}}%</td>
+        </tr>
+        <tr>
+          <td>Age 70</td>
+          <td>{{result.age70}}%</td>
+        </tr>
+        <tr>
+          <td>Age 75</td>
+          <td>{{result.age75}}%</td>
+        </tr>
+        </table>
+      </ion-item>
+    </ion-list>
+      
+  </div>
+  <div class="laim">
+        <strong>Disclaimer</strong><br/>
+        This calculator is generic and for informational purposes only and does not substitute for professional advice. Personal needs and financial circumstances vary according to each investor’s specific risk profile. The results do not purport to represent the performance of any security or investments where returns are market-driven.
+      </div>
+</ion-content>

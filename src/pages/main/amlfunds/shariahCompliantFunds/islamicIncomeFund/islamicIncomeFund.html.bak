@@ -1,0 +1,84 @@
+<ion-content padding class="cash-funds">
+  <div class='info-header'>
+    <div>
+      <span class="ico-islamic-fund"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Islamic Income Fund</h3>
+    </div>
+  </div>
+  <div class='nav-fund-details-header'>
+    <div>
+      <p *ngFor="let user of users | slice:14:15" [title]="user.name">Fund Price as of {{user.updated_date}}</p>
+    </div>
+    <div class="image-flex">
+      <div>
+        <p>Offer (Rs)</p>
+        <h1  *ngFor="let user of users | slice:14:15" [title]="user.name">{{user.offer_price}}</h1>
+      </div>
+      <div>
+        <p>Redemption (Rs)</p>
+        <h1  *ngFor="let user of users | slice:14:15" [title]="user.name">{{user.redemption_price}}</h1>
+      </div>
+    </div>
+</div>
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Islamic Income Fund is an open end Fund managed by HBL Asset Management Ltd, a wholly
+        owned subsidiary of HBL.
+      </p>
+    </div>
+    <div class="objective">
+      <h3>Objective</h3>
+      <p>
+        The Investment Objective of the Fund is to provide competitive risk adjusted returns to its investors by investing in a diversified
+        portfolio of long, medium and short term Shariah compliant debt instruments while taking in to account liquidity
+        considerations.
+      </p>
+    </div>
+    <div class="features">
+      <h3>Features and Benefits of HBL Islamic Income Fund:</h3>
+      <ul>
+        <li>
+          Ideal for investors seeking a steady income through investing in shariah compliant diversified pool of fixed income instruments.
+        </li>
+        <li>
+          Regular Income Options: Short term needs are catered to by monthly, quarterly or annual payments
+        </li>
+        <li>
+          Holding Period: No fixed term; can be redeemed at any time
+        </li>
+        <li>
+          Minimum Investment Rs. 10,000
+        </li>
+        <li>
+          Subsequent investment Rs. 1,000
+        </li>
+        <li>
+          Bank Financing: Units can be used as a collateral against financing
+        </li>
+        <li>
+          Encashment: 2-3 Days. However constitutive documents of the fund allow up to six working days.
+        </li>
+        <li>
+          Tax Credit: Can be availed by Salaried and self-employed individuals as per current tax laws.
+        </li>
+        <li>
+          Capital Gains Tax (CGT) will be deducted as per current tax law
+        </li>
+        <li>
+          Front End Load: 1.5%
+        </li>
+        <li>
+          Risk Level: Low/ Medium
+        </li>
+      </ul>
+      <div>
+          <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

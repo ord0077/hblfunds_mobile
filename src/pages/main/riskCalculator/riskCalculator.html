@@ -1,0 +1,345 @@
+<ion-content class="riskcalculator">
+	<div class='image-info'>
+		<div>
+			<span class="ico-checklist"></span>
+		</div>
+		<div>
+			<h1 class="hh">Choose a Fund</h1>
+		</div>
+	</div>
+
+	<div class="para">
+		<p>
+
+				We all save to full-fill our dreams. Be it a long-term goal or a short-term plan, choosing the right product for 
+				investment will help you achieve your financial objective.	
+				By answering few questions below, let us help you choose the best mutual fund or investment plan depending on 
+				your risk appetite.
+		</p>		
+		
+	</div>
+<!--	<div class="head-calculator">
+		<p>Risk Profiler</p>
+		
+		</div>
+		<div class="para">
+			<p>Please answer the following questions as candidly as you can. Your answers will help us determine the most suitable asset allocation model for you.</p>
+		</div>
+	  <div class="calculator-options">
+			<ion-item>
+					<ion-label color="white" stacked>Enter Name*</ion-label>
+					<ion-input></ion-input>
+				  </ion-item>
+				  <ion-item>
+						<ion-label color="white" stacked>Enter Email*</ion-label>
+						<ion-input></ion-input>
+					  </ion-item>
+			</div>
+-->
+			
+	  	<div class="form-calculator">
+					<form (ngSubmit)="onSubmit(data)">
+
+					<ion-list radio-group [(ngModel)]="data.answer1" name="answer1">
+							<ion-list-header>
+									1) Please mention the age bracket you fall in:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>Above 61 years</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>55 - 60 years</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>40 - 54 years</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>25 - 39 years</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Less than 25 years</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list> 
+
+
+							<ion-list radio-group [(ngModel)]="data.answer2" name="answer2">
+							<ion-list-header>
+									2) I plan to keep my investment for:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>Less than a year</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>1 – 3 years</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>3 – 5 years</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>5 – 10 years</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>More than 10 years</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list>
+
+
+							<ion-list radio-group [(ngModel)]="data.answer3" name="answer3">
+							<ion-list-header>
+									3) I have enough savings to support my lifestyle for:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>Up to 3 months</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>Up to 6 months</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Up to 1 year</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>1 - 3 years</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Over 3 years</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list>
+
+
+							<ion-list radio-group [(ngModel)]="data.answer4" name="answer4">
+							<ion-list-header>
+									4) I would like my financial goals to be attained in:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>Less than a year</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>1 – 3 years</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>3 – 5 years</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>5 – 10 years</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>More than 10 years</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list>
+
+
+							<ion-list radio-group [(ngModel)]="data.answer5" name="answer5">
+							<ion-list-header>
+									5) I can relate myself to the following statement:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>I cannot bear any capital loss</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>I will redeem my entire investment amount if I incur 5% loss</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>I will wait for my investment to appreciate if I incur 10% loss</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>I have other sources of income to maintain my lifestyle</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>I will invest on long term basis and will make additional investments when the price falls</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list>
+
+
+							<ion-list radio-group [(ngModel)]="data.answer6" name="answer6">
+							<ion-list-header>
+									6) For further investment I intend to take:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>No risk</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>Slight risk with reasonable return and principal protection</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Moderate risk with higher than average return</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Moderate to high risk for potential greater returns</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>High risk for superior returns</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list>
+
+
+							<ion-list radio-group [(ngModel)]="data.answer7" name="answer7">
+							<ion-list-header>
+									7) If I incur substantial initial loss I would:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>Redeem my investment</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>Switch to safer and secure investment option</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Hold my investment and decide later</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Observe economic situation and market outlook</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Continue with my investment plan</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list>
+
+
+							<ion-list radio-group [(ngModel)]="data.answer8" name="answer8"> 
+							<ion-list-header>
+									8) I usually invest/keep my money in:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>Current Accounts</ion-label>
+									<ion-radio item-left value=-2></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>PLS/Savings/TDR’s</ion-label>
+									<ion-radio item-left value=-1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Fixed Income Mutual Fund/National Savings Schemes/Prize Bond</ion-label>
+									<ion-radio item-left value=0></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Stock/Share/Equity based mutual fund</ion-label>
+									<ion-radio item-left value=1></ion-radio>
+							</ion-item>
+							
+							<ion-item>
+									<ion-label>Real Estate</ion-label>
+									<ion-radio item-left value=2></ion-radio>
+							</ion-item>
+						</ion-list>
+
+
+							<ion-list radio-group [(ngModel)]="data.select" name="select">
+								<ion-list-header>
+									9) Preferred Product Type:
+							</ion-list-header>
+					
+							<ion-item>
+									<ion-label>Conventional Mutual Fund</ion-label>
+									<ion-radio item-left value="conventional"></ion-radio>
+							</ion-item>
+					
+							<ion-item>
+									<ion-label>Islamic Mutual Fund</ion-label>
+									<ion-radio item-left value="islamic"></ion-radio>
+							</ion-item>
+
+							<ion-item>
+									<ion-label>ANY</ion-label>
+									<ion-radio item-left value="any"></ion-radio>
+							</ion-item>							
+						</ion-list>
+					
+						<ion-item class="padding-minus">
+						<button ion-button block type="submit">Assess</button>
+						</ion-item>
+						<div class="res">
+							<table *ngIf="result">
+								<tr>
+									<td>We Suggest You:</td>
+								</tr>
+								<tr>
+									<td>{{result.conventional}}</td>
+								</tr>
+								<tr>
+									<td>{{result.islamic}}</td>
+								</tr>
+							</table>
+						</div>
+						<ion-item class="padding-minus">
+						<button ion-button block (click)="clearForm()" type="button" >Clear</button>
+						</ion-item>
+						<div class="disc">
+						<strong>Disclaimer</strong><br/>
+						The proposed strategies is professionally designed to achieve specific financial needs and investment goals and will vary accordingly due to changes in information, risk tolerance, goals or investments over time. HBL AMC will not be responsible if the results or performance of the selected investment are not in accordance with the expected outcomes as the returns are market driven.
+				</div></form>
+					
+		</div>
+</ion-content>

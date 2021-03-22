@@ -1,0 +1,80 @@
+<ion-content padding class="cash-funds">
+  <div class='info-header'>
+    <div>
+      <span class="ico-islamic-fund"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Islamic Asset Allocation Fund</h3>
+    </div>
+  </div>
+  <div class='nav-fund-details-header'>
+    <div>
+      <p *ngFor="let user of users | slice:15:16" [title]="user.name">Fund Price as of {{user.updated_date}}</p>
+    </div>
+    <div class="image-flex">
+      <div>
+        <p>Offer (Rs)</p>
+        <h1  *ngFor="let user of users | slice:15:16" [title]="user.name">{{user.offer_price}}</h1>
+      </div>
+      <div>
+        <p>Redemption (Rs)</p>
+        <h1  *ngFor="let user of users | slice:15:16" [title]="user.name">{{user.redemption_price}}</h1>
+      </div>
+    </div>
+</div>
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Islamic Asset Allocation Fund is an open end Shariah Compliant Fund, Shari’ah Compliant Asset Allocation Scheme, managed
+        by HBL Asset Management Limited, a wholly owned subsidiary of HBL.
+      </p>
+    </div>
+    <div class="objective">
+      <h3>Objective</h3>
+      <p>
+        Ideal for investors who are risk-averse yet want to avail the capital growth in the stock market through shariah compliant equity investments.
+      </p>
+    </div>
+    <div class="features">
+      <h3>Features and benefits of HBL Islamic Asset Allocation Fund:</h3>
+      <ul>
+        <li>
+          Ideal for investors who are risk averse yet want to avail the capital growth in stock market through shariah compliant equity
+          investments.
+        </li>
+        <li>
+          Up to 30% investment in Stock Market
+        </li>
+        <li>
+          Minimum 70% investment in sovereign debt and money market instruments
+        </li>
+        <li>
+          Holding Period: No fixed term; can be redeemed at any time
+        </li>
+        <li>
+          Minimum Investment Rs. 1,000
+        </li>
+        <li>
+          Tax Credit: Can be availed by salaried and self-employed individuals as per current tax laws.
+        </li>
+        <li>
+          CGT: Capital Gains Tax will be deducted as per current tax laws.
+        </li>
+        <li>
+          Encashment: 2-3 Days. However constitutive documents of the fund allow up to six working days.
+        </li>
+        <li>
+          Front end Load: 2%
+        </li>
+        <li>
+          Risk Level: Medium – High
+        </li>
+      </ul>
+      <div>
+          <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

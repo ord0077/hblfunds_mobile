@@ -1,0 +1,92 @@
+<ion-content padding class="cash-funds">
+  <div class='info-header'>
+    <div>
+      <span class="ico-funds"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Islamic Financial Planning Fund</h3>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Islamic Financial Planning Fund is structured to address your shariah compliant investment needs. The fund is designed
+        to help you achieve your financial goals as per your risk appetite.
+        <br/> HBL Islamic Financial Planning Fund (HBL-IFPF) invests in a mixture of shariah compliant income / money market and
+        equity schemes. The fund offers investment plans with varying degrees of exposure to equities to help investors achieve
+        their targeted returns as per their risk appetite.
+      </p>
+    </div>
+    <div class="objective">
+      <h3>Objective</h3>
+      <p>
+        HBL-IFPF is an open-end shariah compliant fund of funds that aims to generate returns on investment as per the respective
+        allocation plan by investing in shariah compliant mutual funds in line with the risk tolerance of the investor.
+        <br/> HBL-IFPF offers the following investments plans:
+        <br/>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td width="106">Investment Plans</td>
+              <td width="106">Equity Scheme(s)</td>
+              <td width="106">Income / Money Market Scheme(s)</td>
+              <td width="106">Cash / Cash Equivalent</td>
+            </tr>
+            <tr>
+              <td width="106">Conservative</td>
+              <td width="106">20%</td>
+              <td width="106">80%</td>
+              <td width="106">5-10%</td>
+            </tr>
+            <tr>
+              <td width="106">Active</td>
+              <td width="106">0-95%</td>
+              <td width="106">0-95%</td>
+              <td width="106">5-10%</td>
+            </tr>
+            <tr>
+              <td width="106">Strategic*</td>
+              <td width="106">0-95%</td>
+              <td width="106">0-95%</td>
+              <td width="106">5-10%</td>
+            </tr>
+          </tbody>
+        </table>
+        <br/>
+        *Duration of this plan is 24 months and is available till 16th June, 2017.
+    </div>
+    <br/>
+    <div class="features">
+      <h3>Features & Benefits:</h3>
+      <ul>
+        <li>
+          Based on fund of funds structure
+        </li>
+        <li>
+          Active management of your investment in equities and income funds to deliver optimum returns
+        </li>
+        <li>
+          Under shariah guidance of Mufti Irshad Ahmed Aijaz
+        </li>
+        <li>
+          Up to 95% stock market participation under active and strategic investment plan
+        </li>
+        <li>
+          Minimum Investment Rs. 10,000
+        </li>
+        <li>
+          Encashment in 2 working days
+        </li>
+        <li>
+          Eligible for tax credit under section 62 of Income Tax Ordinance
+        </li>
+      </ul>
+      <div>
+        <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+</div>
+    </div>
+  </div>
+
+
+</ion-content>

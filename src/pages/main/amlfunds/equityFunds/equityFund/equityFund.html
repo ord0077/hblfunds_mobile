@@ -1,0 +1,74 @@
+<ion-content padding class="cash-funds" id="my-content">
+  <div class='info-header'>
+    <div>
+      <span class="ico-education"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Equity Fund</h3>
+    </div>
+  </div>
+  <div class='nav-fund-details-header'>
+    <div>
+      <p *ngFor="let user of users | slice:8:9" [title]="user.name">Fund Price as of {{user.updated_date}}</p>
+    </div>
+    <div class="image-flex">
+      <div>
+        <p>Offer (Rs)</p>
+        <h1  *ngFor="let user of users | slice:8:9" [title]="user.name">{{user.offer_price}}</h1>
+      </div>
+      <div>
+        <p>Redemption (Rs)</p>
+        <h1  *ngFor="let user of users | slice:8:9" [title]="user.name">{{user.redemption_price}}</h1>
+      </div>
+    </div>
+</div>
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Equity Fund is an open-end Fund managed by HBL Asset Management Ltd, a wholly owned subsidiary
+        of HBL.
+      </p>
+    </div>
+    <div class="objective">
+      <h3>Objective</h3>
+      <p>
+        The objective of the Fund is to achieve long term capital growth by investing in equity securities offering capital gains
+        and dividends.
+      </p>
+    </div>
+    <div class="features">
+      <h3>Features and Benefits of HBL Equity Fund</h3>
+      <ul>
+        <li>
+          Ideal for investors who wish to invest for long term capital growth.
+        </li>
+        <li>
+          Holding Period: No fixed term; can be redeemed at any time
+        </li>
+        <li>
+          Minimum Investment Rs. 1,000
+        </li>
+        <li>
+          Subsequent investment Rs. 1,000
+        </li>
+        <li>
+          Tax Credit: Can be availed by Salaried and self-employed individuals as per current tax laws.
+        </li>
+        <li>
+          Capital Gains Tax (CGT) will be deducted as per current tax law
+        </li>
+        <li>
+          Front End Load: 2%
+        </li>
+        <li>
+          Risk Level: High
+        </li>
+      </ul>
+      <div>
+        <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

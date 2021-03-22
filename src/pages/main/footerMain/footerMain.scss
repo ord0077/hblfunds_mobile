@@ -1,0 +1,52 @@
+.main-footer {
+  bottom: 0px;
+  @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      bottom:-11px !important;
+    }
+  @media only screen 
+  and (max-width : 375px) 
+  and (max-height : 667px) 
+  and (-webkit-device-pixel-ratio : 2) 
+   { 
+    bottom:0px;
+  }
+  background: #586168;
+  
+ .toolbar-md {
+      min-height:47px;
+    }
+  .blue {
+    .toolbar-background-md {
+      background-color: #DE9D05;
+    }
+    
+  }
+  .flex {
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 2rem;
+    p {
+      font-size: 11px !important;
+      margin: 0;
+    }
+   
+    div {
+      text-align: center;
+    }
+  } 
+  .copyright{
+    background-color: #008269;
+    color: #fff;
+    font-size: 9px;
+    padding: 4%;
+    
+  }
+  
+}

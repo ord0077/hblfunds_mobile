@@ -1,0 +1,26 @@
+accordion {
+    .card-header{
+        background-color: #008269 ;
+        color: #fff;
+    }
+    .item-md-primary, .item-divider-md-primary
+    {
+    color: #fff;
+    background-color: #008269 ;
+    }
+    .card-content{
+        padding: 0px 16px;
+        max-height: 0px;
+    }
+    .card-md{
+        margin: 10px;
+        margin-top: 10px!important;
+    }
+    ion-label{
+        white-space: initial !important;
+    }
+    .item-md{
+        font-size: 1.2rem;
+        padding-left: 0px!important;
+    }
+}

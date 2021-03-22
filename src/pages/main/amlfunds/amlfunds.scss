@@ -1,0 +1,21 @@
+.money-market{
+    .scroll-content{
+        margin-top: 30px;
+        @media only screen 
+        and (max-width : 375px) 
+        and (max-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) 
+         { 
+          margin-top:40px !important;
+        }
+    }
+    
+}
+
+.new-dis{
+    font-size:12px;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}

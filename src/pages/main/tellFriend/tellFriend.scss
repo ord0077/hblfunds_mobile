@@ -1,0 +1,50 @@
+.tellafriend {
+  
+  .image-info {
+    color: white;
+    background-color: #60C194;
+    background-image: url(../assets/imgs/back1.png);
+    background-repeat: no-repeat;
+    height: 90px;
+    background-size: 100% 90%;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    div {
+      padding-left: 5%;
+      span {
+        font-size: 60px;
+      }
+      h1 {
+        font-size: 26px;
+        margin-top: 9px;
+      }
+    }
+  }
+      p{
+          font-size: 14px !important;
+          
+          margin-bottom: 10px !important;
+          padding-left: 20px;padding-right: 20px;
+      }
+      .button-block-md{
+        background-color: #4ca495;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .button-ios {
+        border-radius: 4px;
+        height: 2.8em;
+        font-size: 1.6rem;
+        color: #fff;
+        background-color: #008269 ;
+        margin: 5px auto;
+        padding: 0 1em;
+        width: 98%;
+    }
+}

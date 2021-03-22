@@ -1,0 +1,110 @@
+.calculator {
+  
+  
+    .para {
+    color: #000;
+      p {
+        font-size: 16px !important;
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 23px;
+      }
+    }
+    h3 {
+      font-size: 12px;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+    .head-calculator {
+      background-color: #171717;
+      color: white;
+      display: flex;
+      justify-content: center;
+      p {
+        font-size: 12px !important;
+        font-weight: 900;
+      }
+    }
+    .calculator-options {
+      background-color: #5DC9A7;
+      color: white;
+      display: flex;
+      justify-content: left;
+      ion-item {
+        background-color: #5DC9A7;
+        color: white;
+      }
+      ion-radio {
+        margin: 0 !important;
+        margin-right: 10px !important; 
+      }
+  
+      .radio-ios .radio-icon,.radio-md .radio-icon {
+        border-color: #ffffff;
+      }
+      .radio-ios .radio-icon,.radio-md .radio-inner {
+        background-color: #5DC9A7;
+      }
+      .item-radio-checked.item-md ion-label {
+        color: white;
+      }
+      .item-md.item-block .item-inner {
+        border: none;
+      }
+      .calculator .calculator-options ion-item {
+            background-color: #5DC9A7;
+      color: white;
+      height: 47px;
+      }
+    }
+  
+    .form-calculator {
+      padding-top: 2%;
+      padding-bottom: 5%;
+      background-color: #96d0c9;
+      .item-md .item-button {
+        padding: 0 0.6em;
+        height: 25px;
+        font-size: 2.2rem;
+        padding: 8%;
+        text-transform: capitalize;
+        background-color: #008269 ;
+      }
+      input {
+        background-color: white;
+        padding: 2%;
+        padding-left: 4%;
+        color: black;
+      }
+      ion-label {
+            color: white;
+      font-size: 20px;
+      padding-left: 0px;
+      }
+      ion-item {
+        margin-bottom: -1px;  
+        border: none;
+        background-color: #82D3CA;
+      }
+      .list-md .item-input:last-child {
+        border: none;
+      }
+      .item-inner {
+        border: none;
+      }
+      .input-has-focus {
+        color: white;
+      }
+  
+      .item-input-has-focus .label-md[stacked],
+      .input-has-focus .label-md[stacked],
+      .item-input-has-focus .label-md[floating],
+      .input-has-focus .label-md[floating] {
+        color: white;
+        border: none;
+        
+      }
+    }
+  
+    
+  }

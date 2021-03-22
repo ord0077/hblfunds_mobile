@@ -1,0 +1,71 @@
+
+<ion-content padding class="page-home-new grid-menu" >
+  <ion-list  no-lines>
+    
+    <div class="row">
+        <ion-item (click)='goto(StocksHome)'>
+          
+            <ion-thumbnail item-start >
+              <span class="ico-trending-up">
+                  
+              </span>
+            </ion-thumbnail>
+            <p>Stock Market</p>
+          
+          </ion-item>
+          <ion-item (click)="goto(tab2Root)">
+            <ion-thumbnail item-start>
+              <span class="ico-bar-chart"></span>
+            </ion-thumbnail>
+            <p>HBL Funds</p>
+            
+          </ion-item>
+    </div>
+    <div class="row">
+        
+        <ion-item (click)="gotoHbl()">
+            <ion-thumbnail item-start>
+              <span class="ico-logout"></span>
+            </ion-thumbnail>
+            <p>Login to E-Services</p>
+          </ion-item>
+
+
+
+          <ion-item (click)='goto(InvestorEducation)'>
+            <ion-thumbnail item-start>
+              <span class="ico-fund-education"></span>
+            </ion-thumbnail>
+            <p>Investor Education</p>
+            
+          </ion-item>
+    </div>
+    <div class="row">
+        <ion-item (click)="goto(InvestorServices)">
+            <ion-thumbnail item-start>
+              <span class="ico-coins"></span>
+            </ion-thumbnail>
+            <p>Investor Services</p>
+            
+          </ion-item>
+          <ion-item (click)="goto(newsComponent)">
+              <ion-thumbnail item-start>
+                <span class="ico-newspaper"></span>
+              </ion-thumbnail>
+              <p style="text-align:center;">News</p>
+              <h3 class="news">Powered by Dawn.com</h3>
+              
+            </ion-item>
+    </div>
+    <!-- <p>
+      {{this.did}}
+      {{this.chay}}
+    </p> -->
+<div class="home-banner">
+  <img src="https://hblasset.com/hblamlbanner.jpg" (click)="gotohblaml()" alt="" style="width:100%; height:auto;">
+</div>
+    
+     
+   
+  </ion-list>
+</ion-content>

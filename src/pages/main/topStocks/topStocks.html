@@ -1,0 +1,89 @@
+<ion-content class="topStocks">
+  <ion-segment [(ngModel)]="segments">
+    <ion-segment-button (click)="loadData('gainers')" value="gainers">
+      <div>Top Gainers</div>
+      <small>(PKR)</small>
+
+    </ion-segment-button>
+    <ion-segment-button (click)="loadData('loosers')" value="loosers"> <div>Top Losers </div>  <small>(PKR)</small></ion-segment-button>
+    <ion-segment-button (click)="loadData('sector')" value="sector">Top Sector</ion-segment-button>
+    <ion-segment-button (click)="loadData('company')" value="company">Top Company</ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="segments">
+    <ion-grid *ngSwitchCase="'gainers'">
+      <ion-row *ngFor="let gainer of topGainers">
+        <ion-col class="card">
+          <ion-row>
+            <ion-col col-2>{{gainer.symbol}}</ion-col>
+            <ion-col>{{gainer.companyName}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="market-current">{{gainer.currentPrice | number:'1.1-2'}}</ion-col>
+            <span>
+                <ion-icon name="md-arrow-round-up"></ion-icon>
+            </span>
+           
+            <div class="market-up-down up"> +{{gainer.change | number:'1.1-2'}}(+{{gainer.percentage | number:'1.1-2'}}%)</div>
+          </ion-row>
+          <ion-row>
+            <ion-col col-2>VOLUME</ion-col>
+            <ion-col col-2>HIGH</ion-col>
+            <ion-col col-2>LOW</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-2>{{gainer.volume}}</ion-col>
+            <ion-col col-2>{{gainer.high | number:'1.1-2'}}</ion-col>
+            <ion-col col-2>{{gainer.low | number:'1.1-2'}}</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid *ngSwitchCase="'loosers'">
+      <ion-row *ngFor="let looser of topLoosers">
+        <ion-col class="card">
+          <ion-row>
+            <ion-col col-2>{{looser.symbol}}</ion-col>
+            <ion-col>{{looser.companyName}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-3 class="market-current">{{looser.currentPrice | number:'1.1-2'}}</ion-col>
+            <span>
+                <ion-icon name="md-arrow-round-down"></ion-icon>
+            </span>
+            <div class="market-up-down down"> {{looser.change | number:'1.1-2'}}({{looser.percentage | number:'1.1-2'}}%)</div>
+          </ion-row>
+          <ion-row>
+            <ion-col col-2>VOLUME</ion-col>
+            <ion-col col-2>HIGH</ion-col>
+            <ion-col col-2>LOW</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-2>{{looser.volume}}</ion-col>
+            <ion-col col-2>{{looser.high | number:'1.1-2'}}</ion-col>
+            <ion-col col-2>{{looser.low | number:'1.1-2'}}</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid *ngSwitchCase="'sector'" class="toppers">
+        <ion-row>
+            <ion-col>Sectors</ion-col>
+            <ion-col>Turnover (Shares)</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let sector of topSector">
+            <ion-col>{{sector.sectorName}}</ion-col>
+            <ion-col>{{sector.totalTurnover | number}}</ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid *ngSwitchCase="'company'" class="toppers">
+        <ion-row>
+            <ion-col>Companies</ion-col>
+            <ion-col>Turnover (Shares)</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let company of topCompanies">
+            <ion-col>{{company.symbol}}</ion-col>
+            <ion-col>{{company.turnover | number}}</ion-col>
+        </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

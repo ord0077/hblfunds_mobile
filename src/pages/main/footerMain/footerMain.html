@@ -1,0 +1,26 @@
+<ion-footer class="main-footer hide-on-keyboard-open">
+
+    <div class="flex" id="shrink">
+        <div (click) = 'goto(ContactPage)'>
+          <span class="ico-telemarketer"></span>
+          <p>Contact Us</p>
+        </div>
+        <div (click) = 'goto(FollowUs)'>
+          <span class="ico-user"></span>
+          <p>Follow Us</p>
+        </div>
+    
+        <div (click) = 'goto(BranchLocator)'>
+          <span class="ico-placeholder" ></span>
+          <p>Branch Locator</p>
+        </div>
+    
+        <div (click) = 'goto(Settings)'>
+          <span class="ico-settings2"></span>
+          <p>Settings</p>
+        </div>
+    </div>
+    <div class="copyright" style="text-align:center;">
+        © Copyright {{today}} HBL Asset Management Limited.  All rights reserved.
+    </div>
+</ion-footer>

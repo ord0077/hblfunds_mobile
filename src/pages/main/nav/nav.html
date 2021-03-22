@@ -1,0 +1,183 @@
+<ion-content class="nav">
+    <div class='image-nav'>
+            <div>
+             
+              <h3 class="heading">
+                    Fund Prices
+                </h3>
+            </div>
+         
+          </div>   
+              
+    <div class="fund-prices-home">
+        <div class="table-responsive">
+        <table class="table-fund">
+            <thead>
+                <tr>
+                    <td colspan="4"><strong>Conventional Mutual Funds</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: solid 1px #9a9a9a; width:30%;"><strong>Fund Type</strong></td>
+                    <td style="text-align:center; border: solid 1px #9a9a9a; width: 18%;"><strong>Offer (Rs.)</strong></td>
+                    <td style="text-align:center; border: solid 1px #9a9a9a; width: 27%;"><strong>Redemption (Rs.)</strong></td>
+                    <td style="text-align:center; border: solid 1px #9a9a9a; width: 25%;"><strong>Date Applicable</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr *ngFor="let user of users | slice:1:11" [title]="user.name" >
+                    <td style="text-align:left;">
+                        {{user.fund_name}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.offer_price}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.redemption_price}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.updated_date}}
+                    </td>
+                  </tr>            
+            </tbody>                                                                                                                                            
+            <thead>
+                <tr>
+                    <td colspan="4"><strong>Shariah Compliant Mutual Funds</strong></td>
+                </tr>
+            </thead>
+          
+            <tbody>
+                <tr *ngFor="let user of users | slice:11:17" [title]="user.name" >
+                    <td>
+                        {{user.fund_name}}
+                    </td>
+                    <td>
+                        {{user.offer_price}}
+                    </td>
+                    <td>
+                        {{user.redemption_price}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.updated_date}}
+                    </td>
+                  </tr>            
+            </tbody>
+            <tbody>
+                <tr *ngFor="let user of users | slice:0:1" [title]="user.name" >
+                    <td>
+                        {{user.fund_name}}
+                    </td>
+                    <td>
+                        {{user.offer_price}}
+                    </td>
+                    <td>
+                        {{user.redemption_price}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.updated_date}}
+                    </td>
+                  </tr>            
+            </tbody>
+            <thead>
+                <tr>
+                    <td colspan="4"><strong>Pension Funds</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align:left !important" colspan="4"><strong>HBL Pension Fund</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr *ngFor="let user of users | slice:17:20" [title]="user.name" >
+                    <td>
+                        {{user.fund_name}}
+                    </td>
+                    <td>
+                        {{user.offer_price}}
+                    </td>
+                    <td>
+                        {{user.redemption_price}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.updated_date}}
+                    </td>
+                  </tr>            
+            </tbody>
+            <tbody>
+                <tr>
+                    <td style="text-align:left !important" colspan="4"><strong>HBL Islamic Pension Fund</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr *ngFor="let user of users | slice:20:23" [title]="user.name" >
+                    <td>
+                        {{user.fund_name}}
+                    </td>
+                    <td>
+                        {{user.offer_price}}
+                    </td>
+                    <td>
+                        {{user.redemption_price}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.updated_date}}
+                    </td>
+                  </tr>            
+            </tbody>
+            <thead>
+                <tr>
+                    <td colspan="4"><strong>Fund of Funds</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users | slice:23:29" [title]="user.name" >
+                    <td>
+                        {{user.fund_name}}
+                    </td>
+                    <td>
+                        {{user.offer_price}}
+                    </td>
+                    <td>
+                        {{user.redemption_price}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.updated_date}}
+                    </td>
+                  </tr>            
+            </tbody>
+           
+            <thead>
+                <tr>
+                    <td colspan="4"><strong>Conventional Mutual Funds</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: solid 1px #9a9a9a; width:30%;"><strong>Fund Type</strong></td>
+                    <td style="text-align:center; border: solid 1px #9a9a9a; width: 18%;"><strong>NAV (Rs.)</strong></td>
+                    <td style="text-align:center; border: solid 1px #9a9a9a; width: 27%;"><strong>Market Closing</strong></td>
+                    <td style="text-align:center; border: solid 1px #9a9a9a; width: 25%;"><strong>Date Applicable</strong></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr *ngFor="let user of users | slice:29:33" [title]="user.name" >
+                    <td>
+                        {{user.fund_name}}
+                    </td>
+                    <td>
+                        {{user.nav_price}}
+                    </td>
+                    <td>
+                        {{user.market_closing}}
+                    </td>
+                    <td style="text-align:center;">
+                        {{user.updated_date}}
+                    </td>
+                  </tr>            
+            </tbody>
+        </table>
+        </div>
+    </div>
+</ion-content>

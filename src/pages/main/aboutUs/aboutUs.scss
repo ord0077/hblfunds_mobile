@@ -1,0 +1,57 @@
+
+  page-aboutU{
+    .scroll-content{
+      // background:rgba(16, 124, 101, 0.308) url(../assets/imgs/lll.png) no-repeat center center ;
+      // background-size: contain;
+      &:before{
+        z-index:-1;
+        position:absolute;
+        left:0;
+        top:0;
+        bottom: 0;
+        right: 0;
+      content: url('../assets/imgs/lll.png');
+        opacity:.3;
+        background:rgba(0, 255, 200, 0.459) url(../assets/imgs/lll.png) no-repeat center center ;
+      background-size: 200%;
+    }
+    }
+.about-img{
+  width:70%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 30%;
+  
+  padding: 20px;border: 0px solid #f4f4f4;
+  //box-shadow: 3px 3px 8px rgba(1, 107, 81, 0.452);
+}
+
+.about-my-content{
+  margin-top: 10%;
+}
+  
+     .text{
+       text-align: center;
+       margin: 0;
+       padding: 0;
+       font-size: 9px !important;
+       strong{
+         span{
+           color: rgb(255, 113, 61);
+           text-decoration: underline;
+         }
+       }
+     }
+     a{
+       text-decoration: none;
+       color: black;
+     }
+} 
+
+.about-disclaimer{
+  background-color: #c8ece4;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 11px;
+  color: #717171;
+}

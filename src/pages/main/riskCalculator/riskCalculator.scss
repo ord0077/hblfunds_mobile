@@ -1,0 +1,206 @@
+.riskcalculator {
+  
+  .list-md{
+    margin: 0px 0 0px!important;
+  }
+  
+  .res{
+    padding: 0 20px;
+    
+  background-color: #82d3ca;
+  }
+  table{
+    width: 100%; 
+    background-color: #008269;
+}
+
+tr, th, td{
+  padding: 5px;
+  color: #fff;
+  text-align: left;
+  height: 10px;
+  vertical-align: bottom;
+}
+  .para {
+  color: #000;
+    p {
+      font-size: 14px !important;
+      padding-left: 10%;
+      padding-right: 10%;
+      line-height: 1.5;
+    }
+  }
+  .disc{
+    font-size: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .head-calculator {
+    background-color: #171717;
+    color: white;
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 12px !important;
+      font-weight: 900;
+    }
+  }
+  .calculator-options {
+    background-color: #5DC9A7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    .white{
+      color:#fff;
+    }
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md{
+      color: #000;
+    }
+    .text-input{
+      background-color: #86dec2;
+     
+      border: 1px solid #008269 ;padding: 10px;   color: #000;   }
+    ion-item {
+      background-color: #5DC9A7;
+      color: white;
+    }
+    ion-radio {
+      margin: 0 !important;
+      margin-right:0 !important; 
+    }
+  
+    .radio-ios .radio-icon,.radio-md .radio-icon {
+      border-color: #ffffff;
+    }
+    .radio-ios .radio-icon,.radio-md .radio-inner {
+      background-color: #ffffff;
+    }
+    .item-radio-checked.item-md ion-label {
+      color: white;
+    }
+    .item-md.item-block .item-inner {
+      border: none;
+      margin-left: 20px !important;
+    }
+    .calculator .calculator-options ion-item {
+          background-color: #5DC9A7;
+    color: white;
+    height: 47px;
+    }
+  }
+  .radio-ios .radio-checked .radio-inner {
+    left: 6px;
+    top: 1px;
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    border-width: 2px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-style: solid;
+    border-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.radio-ios .radio-icon {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.item-ios .item-button {
+  padding: 0 0.5em;
+  height: 50px;
+  font-size: 22px;
+}
+  .form-calculator {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color: #008269;
+    
+    .item-md .item-button {
+      padding: 0 0.6em;
+      height: 25px;
+      font-size: 2.2rem;
+      padding: 8%;
+      text-transform: capitalize;
+      background-color: #008269 ;
+   
+      
+    }
+    
+    input {
+      background-color: white;
+      padding: 2%;
+      padding-left: 4%;
+      color: black;
+    }
+    ion-list-header{
+      background-color: #008269;
+      border-top: 0px;
+      margin-top: 10px !important;
+    }
+    ion-label {
+    color: white;
+    font-size: 16px !important;
+    padding-left: 0;
+    white-space: normal;
+    }
+    ion-item {
+      margin-bottom: -1px;  
+      border: none;
+      background-color: #82D3CA;
+    }
+    .list-md .item-input:last-child {
+      border: none;
+    }
+    .item-inner {
+      border: none;
+    }
+    .radio-md .radio-inner{
+      background-color: #fff;
+    }
+    .radio-md .radio-checked{
+      border-color: #fff;
+    }
+    .input-has-focus {
+      color: white;
+    }
+    .item-md .radio-md[item-left], .item-md .radio-md[item-start] {
+      margin: 0 !important;
+      margin-left: 20px !important;
+  }
+    .item-input-has-focus .label-md[stacked],
+    .input-has-focus .label-md[stacked],
+    .item-input-has-focus .label-md[floating],
+    .input-has-focus .label-md[floating] {
+      color: white;
+      border: none;
+      
+    }
+    
+  }
+  
+
+  
+}
+
+
+.riskcalculator .form-calculator .item-inner {
+  border: none;
+  margin-left: 20px;
+}
+
+.padding-minus{
+.item-inner {
+  border: none;
+  margin-left: 0 !important;
+}
+}
+

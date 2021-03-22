@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar class="header-main">
+    <ion-title>
+      <div class="flex">
+        <div class="grid-img" menuToggle>
+          <span class="ico-menu"></span>
+        </div>
+        <div class="hbl-logo" (click)='goto(HomePage)'>
+          <img src="assets/imgs/asset-management.png" alt="">
+        </div>
+        <div class="back-btn">
+          <ion-icon *ngIf="showBackButton === true" (click)="goToHome()" class="back-arrow" name="arrow-back"></ion-icon>
+        </div>
+      </div>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-toolbar class="blue second-header hello">
+  <div class="flex" id="shrink">
+    <div (click)="goto(calculator)">
+      <span class="ico-calculator"></span>
+      <p>Calculators</p>
+    </div>
+    <div (click)="goto(navComponent)">
+      <span class="ico-bar-chart"></span>
+      <p>NAVs</p>
+    </div>
+
+    <div (click)="goto(StocksHome)">
+        <ion-icon ios="ios-trending-up" md="md-trending-up"></ion-icon>
+      <p>Stock Market</p>
+    </div>
+
+    <div (click)="goto(RiskCalculator)">
+      <span class="ico-checklist"></span>
+      <p>Choose a Product</p>
+    </div>
+
+    <div  (click)="goto(reportsComponent)">
+      <span class="ico-bill"></span>
+      <p>Reports</p>
+    </div>
+
+  </div>
+</ion-toolbar>

@@ -1,0 +1,76 @@
+<ion-content padding class="cash-funds">
+  <div class='info-header'>
+    <div>
+      <span class="ico-dollar"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Multi Asset Fund</h3>
+    </div>
+  </div>
+  <div class='nav-fund-details-header'>
+    <div>
+      <p *ngFor="let user of users | slice:5:6" [title]="user.name">Fund Price as of {{user.updated_date}}</p>
+    </div>
+    <div class="image-flex">
+      <div>
+        <p>Offer (Rs)</p>
+        <h1  *ngFor="let user of users | slice:5:6" [title]="user.name">{{user.offer_price}}</h1>
+      </div>
+      <div>
+        <p>Redemption (Rs)</p>
+        <h1  *ngFor="let user of users | slice:5:6" [title]="user.name">{{user.redemption_price}}</h1>
+      </div>
+    </div>
+</div>
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Multi Asset Fund is an open end balanced fund managed by HBL Asset Management Ltd, a wholly owned subsidiary of HBL.
+      </p>
+    </div>
+    <div class="objective">
+      <h3>Objective</h3>
+      <p>
+        To provide long-term capital growth and income by investing in multiple asset classes such as Equity, Equity related instruments,
+        Fixed Income Securities, Continuous Funding System, Derivatives and Money Market instruments.
+      </p>
+    </div>
+    <div class="features">
+      <h3>Benefits of Investing in HBL Multi Asset Fund:</h3>
+      <ul>
+        <li>
+          Ideal for investors who are risk-averse yet want to avail the capital growth in the stock market.
+        </li>
+        <li>
+          Minimum investment: Rs. 1,000
+        </li>
+        <li>
+          Subsequent investment : Rs.1,000
+        </li>
+        <li>
+          Holding Period: No fixed term; can be redeemed at any time.
+        </li>
+        <li>
+          Tax Credit: Can be availed by salaried and self-employed individuals as per current tax laws.
+        </li>
+        <li>
+          CGT: Capital Gains Tax will be deducted as per current tax laws.
+        </li>
+        <li>
+          Encashment: 2-3 Days. However constitutive documents of the fund allow up to six working days.
+        </li>
+        <li>
+          Front end Load: 2.0%
+        </li>
+        <li>
+          Risk Level: Medium-High
+        </li>
+      </ul>
+      <div>
+        <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>

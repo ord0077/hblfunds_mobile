@@ -1,0 +1,167 @@
+[
+  {
+    "updated_date": "March 02, 2018"
+  },
+  {
+    "fund_id": 1,
+    "offer_price": 110.4944,
+    "redemption_price": 108.6527,
+    "Fund_Name": "HBL Income Fund"
+  },
+  {
+    "fund_id": 2,
+    "offer_price": 104.7036,
+    "redemption_price": 104.7036,
+    "Fund_Name": "HBL Money Market Fund"
+  },
+  {
+    "fund_id": 3,
+    "offer_price": 102.8177,
+    "redemption_price": 102.8177,
+    "Fund_Name": "HBL Islamic Money Market Fund"
+  },
+  {
+    "fund_id": 4,
+    "offer_price": 109.8291,
+    "redemption_price": 107.9985,
+    "Fund_Name": "HBL Government Securities Fund"
+  },
+  {
+    "fund_id": 5,
+    "offer_price": 104.6224,
+    "redemption_price": 103.4534,
+    "Fund_Name": "HBL Cash Fund"
+  },
+  {
+    "fund_id": 6,
+    "offer_price": 105.6277,
+    "redemption_price": 103.8672,
+    "Fund_Name": "HBL Islamic Income Fund"
+  },
+  {
+    "fund_id": 7,
+    "offer_price": 110.9798,
+    "redemption_price": 107.9308,
+    "Fund_Name": "HBL Stock Fund"
+  },
+  {
+    "fund_id": 8,
+    "offer_price": 106.8102,
+    "redemption_price": 104.4496,
+    "Fund_Name": "HBL Multi Asset Fund"
+  },
+  {
+    "fund_id": 9,
+    "offer_price": 115.1309,
+    "redemption_price": 112.5864,
+    "Fund_Name": "HBL Islamic Stock Fund"
+  },
+  {
+    "fund_id": 10,
+    "offer_price": 105.9596,
+    "redemption_price": 103.6178,
+    "Fund_Name": "HBL Islamic Asset Allocation Fund"
+  },
+  {
+    "fund_id": 11,
+    "offer_price": 15.1485,
+    "redemption_price": 14.8137,
+    "Fund_Name": "HBL Energy Fund"
+  },
+  {
+    "fund_id": 12,
+    "offer_price": 113.3635,
+    "redemption_price": 110.8581,
+    "Fund_Name": "HBL Equity Fund"
+  },
+  {
+    "fund_id": 13,
+    "offer_price": 95.3481,
+    "redemption_price": 93.2409,
+    "Fund_Name": "HBL Islamic Equity Fund"
+  },
+  {
+    "fund_id": 14,
+    "offer_price": 102.1784,
+    "redemption_price": 99.9202,
+    "Fund_Name": "IFPF Conservative Plan"
+  },
+  {
+    "fund_id": 15,
+    "offer_price": 102.6031,
+    "redemption_price": 100.3355,
+    "Fund_Name": "IFPF Active Plan"
+  },
+  {
+    "fund_id": 16,
+    "offer_price": "N/A",
+    "redemption_price": 100.4195,
+    "Fund_Name": "IFPF Strategic Plan"
+  },
+  {
+    "fund_id": 17,
+    "offer_price": "N/A",
+    "redemption_price": "N/A",
+    "Fund_Name": "Growth Fund"
+  },
+  {
+    "fund_id": 18,
+    "offer_price": "N/A",
+    "redemption_price": "N/A",
+    "Fund_Name": "Investment Fund"
+  },
+  {
+    "fund_id": 19,
+    "offer_price": 379.1941,
+    "redemption_price": 366.7609,
+    "Fund_Name": "HBL Pension Fund Equity Sub Fund"
+  },
+  {
+    "fund_id": 20,
+    "offer_price": 161.817,
+    "redemption_price": 156.5113,
+    "Fund_Name": "HBL Pension Fund Debt Sub Fund"
+  },
+  {
+    "fund_id": 21,
+    "offer_price": 149.3492,
+    "redemption_price": 144.4523,
+    "Fund_Name": "HBL Pension Fund Money Market Sub Fund"
+  },
+  {
+    "fund_id": 22,
+    "offer_price": 403.0651,
+    "redemption_price": 389.8492,
+    "Fund_Name": "HBL Islamic Pension Fund Equity Sub Fund"
+  },
+  {
+    "fund_id": 23,
+    "offer_price": 144.6135,
+    "redemption_price": 139.8718,
+    "Fund_Name": "HBL Islamic Pension Fund Debt Sub Fund"
+  },
+  {
+    "fund_id": 24,
+    "offer_price": 141.8761,
+    "redemption_price": 137.2242,
+    "Fund_Name": "HBL Islamic Pension Fund Money Market  Sub Fund"
+  },
+  {
+    "fund_id": 25,
+    "offer_price": 104.536,
+    "redemption_price": 102.2257,
+    "Fund_Name": "HBL FPF Conservative Plan"
+  },
+  {
+    "fund_id": 26,
+    "offer_price": 105.2818,
+    "redemption_price": 102.955,
+    "Fund_Name": "HBL FPF Active Plan"
+  },
+  {
+    "fund_id": 27,
+    "offer_price": "N/A",
+    "redemption_price": 101.7184,
+    "Fund_Name": "HBL FPF Strategic Plan"
+  }
+ ]

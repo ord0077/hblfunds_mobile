@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "What is Pension Fund / Islamic Pension Fund?",
+    "detail": "Pension Fund is a voluntary pension scheme (VPS). Several investors invest in a retirement scheme / pool of investment managed by HBL Asset Management Limited. Investments of these pension schemes are further invested in different asset classes depending on the sub fund. Islamic Pension Fund is a Shariah compliant voluntary pension scheme (VPS). Several investors invest in a retirement scheme / pool of investment managed by HBL Asset Management Limited. Investments of Islamic Pension Schemes are further invested in Shariah compliant asset classes depending on the sub fund."
+  },
+  {
+    "id": 2,
+    "name": "What is the objective of HBL Pension Fund?",
+    "detail": "To provide a secure source of savings and regular income after retirement to the Participants"
+  },
+  {
+    "id": 3,
+    "name": "Who can invest in Pension Funds?",
+    "detail": "Following are eligible to join Pension Funds: Pakistani Nationals or Non-resident Pakistanis holding a NTN or CNIC or NICOP. A member of approved Provident Fund can transfer his / her balance to Pension Fund. Employers can contribute on behalf of their employees."
+  },
+  {
+    "id": 4,
+    "name": "What are the benefits of Pension Funds?",
+    "detail": "Option of investing money in different allocation schemes, depending on the risk appetite / tolerance of the Participant. Tax Credit The Participant are entitled to tax credit (20% of taxable income and up to 50% of previous year taxable income) on his/ her contribution. Tax free growth in investment The Contributions made by the Participants and/ or their employers (if any), plus the investment income, are accumulated tax free in the Sub-Funds until the Participant retires. Option to withdraw lump sum amount (50% of accumulated value) free of tax at retirement. A Participant can choose to receive a lump sum payment (up to 50% of his/her accumulated balance) when he/she retires, free of tax. Pension Fund Continuity Pension Funds continue even after change of employer unlike provident and gratuity funds. Pension Fund Portability Participants of VPSs can change their Pension Fund Manager or the Pension Fund, once a year by giving 21 days prior notice. However, participants can choose to change their selected Allocation Scheme, twice a year. Professional management Your investment is managed by fund managers who have a high level of educational and professional credentials and appropriate investment managerial experience."
+  },
+  {
+    "id": 5,
+    "name": "Can a Participant have more than one Pension Account?",
+    "detail": "Yes, a Participant can have more than one Voluntary Pension Scheme accounts."
+  },
+  {
+    "id": 6,
+    "name": "What is the minimum initial and subsequent amount that I can invest in Pension Funds?",
+    "detail": "A Participant can open an account with Pension Funds with first minimum investment of Rs 500 and for subsequent contributions the minimum threshold is Rs. 100 ."
+  },
+  {
+    "id": 7,
+    "name": "What is the structure of Pension Funds?",
+    "detail": "Both Pension Fund and Islamic Pension Fund comprise of the following three sub-funds: Equity Sub-Fund, Debt Sub-Fund, Money Markey Sub-Fund"
+  },
+  {
+    "id": 8,
+    "name": "What is the objective of Equity Sub-Fund of HBL Pension Fund?",
+    "detail": "The Investment Objective of the Equity Sub-Fund of the Pension Fund is to earn returns from investments in Pakistani Equity Markets."
+  },
+  {
+    "id": 9,
+    "name": "What is the objective of the Debt Sub-Fund of HBL Pension Fund?",
+    "detail": "The investment objective of the Debt Sub-Fund is to earn returns from investments in debt markets of Pakistan, thus incurring a relatively lower risk than equity investments."
+  },
+  {
+    "id": 10,
+    "name": "What is the objective of Money Market Sub-Fund of HBL Pension Fund?",
+    "detail": "The Investment Objective of the Money Market Sub-Fund is to earn returns from investments in Money Markets of Pakistan, thus incurring a relatively lower risk than debt investments."
+  },
+  {
+    "id": 11,
+    "name": "Who is the Trustee / Custodian of HBL Pension Funds?",
+    "detail": "CDC is the Trustee and Custodian of HBL Pension Funds."
+  },
+  {
+    "id": 12,
+    "name": "What are the Allocation Schemes?",
+    "detail": "The choice of Allocation Scheme gives the Participant an opportunity of an individualized asset allocation according to his/ her risk/ return requirements and working life horizon. The risk-return profile of each Allocation Scheme is dependent on the allocation of that Allocation Scheme in the Sub-Funds."
+  },
+  {
+    "id": 13,
+    "name": "What if the Participant does not choose any allocation scheme?",
+    "detail": "In the event of no choice of allocation scheme by the Participant, the Pension Fund Manager will allow the Life Cycle Allocation Scheme to that Participant."
+  },
+  {
+    "id": 14,
+    "name": "How often can an investor change their allocation scheme?",
+    "detail": "An investor can change from one Allocation Scheme to another Allocation Scheme twice in a Financial Year."
+  },
+  {
+    "id": 15,
+    "name": "What date can a Participant select as a retirement age?",
+    "detail": "Participant can choose his/her age of retirement between sixty and seventy years or after 25 years of joining VPS, whichever comes first."
+  },
+  
+  {
+    "id": 16,
+    "name": "How much Tax Credit I can claim by investing in a Pension Fund?",
+    "detail": "In addition to a tax credit up to 20% of the taxable income, investor joining VPS  at the age of 41 and above are entitled to an additional rebate (catch up) of 2%  p.a. for each year of an age exceeding 40 years. Thus, an individual joining VPS at the age of 50 can claim a tax credit of up to 40% of his/her taxable income.  Similarly, an individual joining VPS at the age of 55 can claim a tax credit of Up to 50% of his/her taxable income."
+  },
+  
+  {
+    "id": 17,
+    "name": "Can Participant invest in both Mutual Funds and Pension Funds at the same time?",
+    "detail": "One can concurrently invest in mutual funds and VPSs and avail tax credit facility under both forms of investments in the same year."
+  },
+  
+  {
+    "id": 18,
+    "name": "How tax credit can be claimed?",
+    "detail": "Salaried Participants can claim tax credit by simply providing account statement issued by Pension Fund Manager to their Human Resource Department with the request to reduce the tax liability accordingly. Self-employed individuals can reduce their annual tax liability at the time of filing their annual income tax returns by the amount of eligible investment in their VPS."
+  },
+  
+  {
+    "id": 19,
+    "name": "Can a Participant continue to claim the investment allowance each year on the amount invested?",
+    "detail": "No, Participants can only avail tax credit for the tax year on the investment made in that particular year in VPS."
+  },
+  
+  {
+    "id": 20,
+    "name": "Is the contribution made by the employers a tax admissible expense?",
+    "detail": "Yes, contributions made by the employer on behalf of the employees in HBL Pension Fund and Islamic Pension Fund are a tax deductible expense as defined under clause 3(c) of the Definitions of the Income Tax Ordinance, 2001."
+  },
+  
+  {
+    "id": 21,
+    "name": "Can a Participant change the pension fund Manager and how frequently?",
+    "detail": "Yes, Participants can change the Pension Fund Manager once in a Financial Year by giving a notice of 21 days."
+  },
+  
+  {
+    "id": 22,
+    "name": "Do the Pension Funds give dividend? (Cash/ Bonus Units). Can dividend in these funds be withdrawn by the Investor?",
+    "detail": "Income earned by the participant is accumulated in the participant’s account and can be withdrawn any time. (Subject to the provisions of Income Tax Ordinance 2001)."
+  },
+  
+  {
+    "id": 23,
+    "name": "Is there any fee on transfer of accumulated balance from one Pension Fund Manager to another Pension Fund Manager?",
+    "detail": "No fee/ front-end fee shall be charged on such transfers."
+  },
+  
+  {
+    "id": 24,
+    "name": "What happens in case of death of a Participant?",
+    "detail": "In the unfortunate event of the death of a Participant, the nominees as mentioned in the Nomination Form shall be entitled to the balance held in Individual Pension Account of the deceased Participant."
+  },
+  
+  {
+    "id": 25,
+    "name": "What are the governing laws pertaining to Pensions Funds?",
+    "detail": "Following are the governing laws pertaining to Pensions Funds: * Voluntary Pension System Rules, 2005. * Income Tax Ordinance, 2001"
+  }
+]

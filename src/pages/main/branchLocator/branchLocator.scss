@@ -1,0 +1,29 @@
+.branch {
+
+
+    p, .item-md, {
+        font-size: 14px !important;
+        
+        margin-bottom: 0px !important;
+        padding-left: 20px;padding-right: 20px;
+    }
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md{
+        color: black;
+    }
+    .select-md .select-icon .select-icon-inner{
+        color: black;
+    }
+    
+    
+}
+.radio-md .radio-inner{
+    background-color: #07a896;
+}
+.item-radio-checked.item-md ion-label {
+    color: #03a795;
+}
+.radio-md .radio-checked {
+    border-color: #03a795;
+}ion-label{
+        font-size: 14px;
+    }

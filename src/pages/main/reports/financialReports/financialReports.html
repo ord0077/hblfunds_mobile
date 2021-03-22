@@ -1,0 +1,24 @@
+<ion-content class="reports">
+    <ion-list  no-lines>
+
+            <ion-item>
+                    <strong><p>{{ title }}</p></strong>
+            </ion-item>
+
+            <script>
+                console.log(title)
+            </script>
+
+            <div *ngFor="let report of reports">
+                <ion-item>
+                    <ion-thumbnail item-start>
+                        <span class="ico-document-file-pdf">
+                        </span>
+                    </ion-thumbnail>
+                    <a (click)="goToPdf(report.link)">
+                        <p>{{ report.date }}</p>
+                    </a>
+                </ion-item>
+            </div>            
+    </ion-list>
+</ion-content>

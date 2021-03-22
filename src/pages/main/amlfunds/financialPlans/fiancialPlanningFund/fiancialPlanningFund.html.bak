@@ -1,0 +1,88 @@
+<ion-content padding class="cash-funds">
+  <div class='info-header'>
+    <div>
+      <span class="ico-funds"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Financial Planning Fund</h3>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Financial Planning fund is the answer to all your investment needs. The fund is designed to help you achieve your financial
+        goals as per your risk appetite
+        <br/> HBL Financial Planning Fund (HBL-FPF) invests in a mixture of income / money market and equity schemes. The fund
+        offers investment plans with varying degrees of exposure to equities to help investors achieve their targeted returns
+        as per their risk appetite. HBL-FPF offers the following investment plans:
+        <br/>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Investment Plans</td>
+              <td>Equity Scheme</td>
+              <td>Income</td>
+              <td>Cash</td>
+              <td>Available From</td>
+            </tr>
+            <tr>
+              <td>Conservative</td>
+              <td>20%</td>
+              <td>80%</td>
+              <td>5-10%</td>
+              <td >11
+                <sup>th</sup> September onwards</td>
+            </tr>
+            <tr>
+              <td >Active</td>
+              <td >0-95%</td>
+              <td >0-100%</td>
+              <td >5-10%</td>
+              <td >11
+                <sup>th</sup> September onwards</td>
+            </tr>
+            <tr>
+              <td >Strategic*</td>
+              <td >0-95%</td>
+              <td >0-100%</td>
+              <td >5-10%</td>
+              <td >7
+                <sup>th</sup> Aug – 10
+                <sup>th</sup> Oct</td>
+            </tr>
+          </tbody>
+        </table>
+        <br/>*Duration of this plan is 24 months and is available till 10th October, 2017
+    </div>
+    <br/>
+    <div class="features">
+      <h3>Features & Benefits:</h3>
+      <ul>
+        <li>
+          Based on fund of funds structure
+        </li>
+        <li>
+          Active management of your investment in equities and income / money market funds to deliver optimum returns
+        </li>
+        <li>
+          Up to 95% stock market participation under active and strategic investment plan
+        </li>
+        <li>
+          Minimum Investment Rs. 10,000
+        </li>
+        <li>
+          Encashment in 2 working days
+        </li>
+        <li>
+          Eligible for tax credit under section 62 of Income Tax Ordinance
+        </li>
+      </ul>
+      <div>
+        <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+</div>
+    </div>
+  </div>
+
+
+</ion-content>

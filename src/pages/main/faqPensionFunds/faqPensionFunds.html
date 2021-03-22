@@ -1,0 +1,22 @@
+<ion-content class="faq">
+    
+              <div class='image-info'>
+                  <div>
+                    <span class="ico-question"></span>
+                  </div>
+                  <div>
+                    <h1 class="hh">FAQ Pension Fund</h1>
+                  </div>
+                </div>
+                <accordion *ngFor="let user of users" [title]="user.name">
+                    <ion-list>
+                      <ion-item>
+                        {{user.detail}}
+                      </ion-item>
+                    </ion-list>
+                  </accordion>
+            
+    
+    </ion-content>
+    
+   

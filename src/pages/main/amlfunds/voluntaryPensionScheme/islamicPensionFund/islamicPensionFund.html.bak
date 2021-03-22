@@ -1,0 +1,47 @@
+<ion-content padding class="cash-funds">
+  <div class='info-header'>
+    <div>
+      <span class="ico-money-jar"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Islamic Pension Fund</h3>
+    </div>
+  </div>
+  
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Islamic Pension Fund is managed by HBL Asset Management Ltd, a wholly owned subsidiary of HBL.
+      </p>
+    </div>
+    <div class="objective">
+      <h3>Objective</h3>
+      <p>
+        To provide a secure and Shariah Compliant source of savings and regular income after retirement to the participants.
+      </p>
+    </div>
+    <div class="features">
+      <h3>Benefits of Investing in HBL Islamic Pension Fund:</h3>
+      <ul>
+        <li>
+          Investment Amount: Minimum of Rs.500/=
+        </li>
+        <li>
+          Flexible Allocation Schemes: Considering one’s current age, retirement goals and the ability to take risks, one can choose
+          different flexible allocation schemes.
+        </li>
+        <li>
+          Tax Credit: Can be availed by salaried and self-employed individuals as per current tax laws.
+        </li>
+        <li>
+          Front end Load: Maximum 3%
+        </li>
+      </ul>
+      <div>
+        <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+</div>
+    </div>
+  </div>
+
+
+</ion-content>

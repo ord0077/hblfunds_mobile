@@ -1,0 +1,86 @@
+<ion-content class="news">
+  
+  <ion-segment [(ngModel)]="segments">
+    <ion-segment-button (click)="getDawnRss('home')" value="home">Home</ion-segment-button>
+    <ion-segment-button (click)="getDawnRss('business')" value="business">Business</ion-segment-button>
+    <ion-segment-button (click)="getDawnRss('world')" value="world">World</ion-segment-button>
+    <ion-segment-button (click)="getDawnRss('sport')" value="sport">Sports</ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="segments">
+    <ion-list *ngSwitchCase="'home'">
+
+      <ion-list *ngFor="let news of allNews">
+        <a (click)="browse(news.link)">
+          <ion-item>
+          <ion-thumbnail item-left>
+            <img src={{news.thumbnail}} />
+          </ion-thumbnail>
+          <h2>
+              {{news.title}}
+          </h2>
+          <h3>
+            Read more...
+          </h3>
+        </ion-item>
+      </a>
+      </ion-list>
+
+    </ion-list>
+    <ion-list *ngSwitchCase="'business'">
+
+      <ion-list *ngFor="let news of allNews">
+        <a (click)="browse(news.link)">
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src={{news.thumbnail}} />
+          </ion-thumbnail>
+          <h2>
+              {{news.title}}
+          </h2>
+          <h3>
+            Read more...
+          </h3>
+        </ion-item>
+        </a>
+      </ion-list>
+
+    </ion-list>
+    <ion-list *ngSwitchCase="'world'">
+
+      <ion-list *ngFor="let news of allNews">
+        <a (click)="browse(news.link)">
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src={{news.thumbnail}} />
+          </ion-thumbnail>
+          <h2>
+              {{news.title}}
+          </h2>
+          <h3>
+            Read more...
+          </h3>
+        </ion-item>
+        </a>
+      </ion-list>
+
+    </ion-list>
+    <ion-list *ngSwitchCase="'sport'">
+
+      <ion-list *ngFor="let news of allNews">
+        <a (click)="browse(news.link)">
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src={{news.thumbnail}} />
+          </ion-thumbnail>
+          <h2>
+              {{news.title}}
+          </h2>
+          <h3>
+            Read more...
+          </h3>
+        </ion-item>
+        </a>
+      </ion-list>
+    </ion-list>
+  </div>
+</ion-content>

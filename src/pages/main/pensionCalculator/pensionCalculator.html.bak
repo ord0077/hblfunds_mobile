@@ -1,0 +1,58 @@
+<ion-content class="calculator">
+  <div class='image-info'>
+    <div>
+      <span class="ico-pention"></span>
+    </div>
+    <div>
+      <h1 class="hh">Retirement Calculator</h1>
+    </div>
+  </div>
+
+  <div class="para">
+    <p>
+
+      Mutual fund and pension schemes offer considerable tax savings for individual clients. Use this calculator to find out how
+      much tax savings you can get when investing in these schemes.
+    </p>
+  </div>
+
+  <div class="head-calculator">
+    <p>Select your employment type</p>
+  </div>
+  <div class="calculator-options" radio-group [(ngModel)]="selector">
+    <ion-item>
+      <ion-label>Salaried</ion-label>
+      <ion-radio [color]="myColor" item-left value="salaried"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Self Employed</ion-label>
+      <ion-radio item-left value="self-employed"></ion-radio>
+    </ion-item>
+  </div>
+  <div class="form-calculator">
+    <ion-list no-lines>
+
+      <ion-item>
+        <ion-label stacked color="white">Current Age *</ion-label>
+        <ion-input placeholder="Years (e.g:32)"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Monthly taxable income *</ion-label>
+        <ion-input placeholder="Rs. (e.g:5000)"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Investment in Mutual Funds *</ion-label>
+        <ion-input placeholder="Rs. (e.g:5000)"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Investment in Pension Funds *</ion-label>
+        <ion-input placeholder="Rs. (e.g:5000)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button block>Calculate</button>
+      </ion-item>
+
+    </ion-list>
+  </div>
+</ion-content>

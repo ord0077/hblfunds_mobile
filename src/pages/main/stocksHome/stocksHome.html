@@ -1,0 +1,163 @@
+<ion-content class="stocksHome">
+  <ion-segment [(ngModel)]="segments">
+    <ion-segment-button value="indices">Indices</ion-segment-button>
+    <ion-segment-button value="summary">Market Highlights</ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="segments">
+    <ion-grid *ngSwitchCase="'summary'" class="summary-page">
+        <ion-row justify-content-center class="summary-tab">
+            <div (click)="select('kse100')" [ngClass]="{'active': selectedStock === kse100}">KSE 100</div>
+            <div (click)="select('kse30')" [ngClass]="{'active': selectedStock === kse30}">KSE 30</div>
+            <div (click)="select('kmi30')" [ngClass]="{'active': selectedStock === kmi30}">KMI 30</div>
+          </ion-row>
+      <ion-row class="mt-3" *ngIf="selectedStock">
+        <ion-col class="market-highlight">
+          <h2>Market Highlights</h2>
+          <ion-row>
+            <ion-col col-5>Current Index</ion-col>
+            <ion-col offset-3>{{selectedStock.currentIndex | number:'1.1-2'}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-5>Change</ion-col>
+            <ion-col offset-3>{{selectedStock.change | number:'1.1-2'}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-5>Percentage Change</ion-col>
+            <ion-col offset-3>{{selectedStock.percentage | number:'1.1-2'}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-5>High</ion-col>
+            <ion-col offset-3>{{selectedStock.highIndex | number:'1.1-2'}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-5>Low</ion-col>
+            <ion-col offset-3>{{selectedStock.lowIndex | number:'1.1-2'}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-5>Volume (Shares)</ion-col>
+            <ion-col offset-3>{{selectedStock.totalTurnover | number}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-5>Volume PKR</ion-col>
+            <ion-col offset-3>{{selectedStock.monitoryVolume | number}}</ion-col>
+          </ion-row>
+          <highcharts-chart *ngIf="seriesData" [Highcharts]="Highcharts" [options]="chartOptions" style="width: 99.5%; height: 320px; margin: 0 auto; display: block;"></highcharts-chart>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid *ngSwitchCase="'indices'">
+      <ion-list>
+       
+        <ion-item (click)="navigateTop()" class="stock-summary">
+          <ion-row *ngIf="kse100">
+            <ion-col col-10>
+              <ion-row>KSE 100</ion-row>
+              <ion-row>
+		<div class="market-current">{{kse100.currentIndex | number:'1.1-2'}}</div>
+		<span *ngIf="kse100.change > 0">
+                  <ion-icon name="md-arrow-round-up"></ion-icon>
+                </span><span *ngIf="kse100.change < 0">
+                  <ion-icon name="md-arrow-round-down"></ion-icon>
+                </span>
+		<div class="market-up-down">{{kse100.change | number:'1.1-2'}} ({{kse100.percentage | number:'1.1-2'}}%)</div>
+		</ion-row>
+              <ion-row>
+                <ion-col>VOLUME</ion-col>
+                <ion-col>HIGH</ion-col>
+                <ion-col>LOW</ion-col>
+                <ion-col>PREVIOUS</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>{{kse100.volume | number:'1.1-2'}}M</ion-col>
+                <ion-col>{{kse100.highIndex | number:'1.1-2'}}</ion-col>
+                <ion-col>{{kse100.lowIndex | number:'1.1-2'}}</ion-col>
+                <ion-col>{{kse100.lastIndex | number:'1.1-2'}}</ion-col>
+              </ion-row>
+            </ion-col>
+            <ion-col col-2>
+              <ion-row>
+                  <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item class="stock-summary">
+          <ion-row *ngIf="kse30">
+            <ion-col col-10>
+              <ion-row>KSE 30</ion-row>
+              <ion-row>
+                
+                <div class="market-current">{{kse30.currentIndex | number:'1.1-2'}}</div><span *ngIf="kse30.change > 0">
+                  <ion-icon name="md-arrow-round-up" ></ion-icon>
+                </span><span *ngIf="kse30.change < 0">
+                  <ion-icon name="md-arrow-round-down"></ion-icon>
+                </span>
+                <div class="market-up-down">{{kse30.change | number:'1.1-2'}} ({{kse30.percentage | number:'1.1-2'}}%)</div>
+                </ion-row>
+              <ion-row>
+                <ion-col>VOLUME</ion-col>
+                <ion-col>HIGH</ion-col>
+                <ion-col>LOW</ion-col>
+                <ion-col>PREVIOUS</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>{{kse30.volume | number:'1.1-2'}}M</ion-col>
+                <ion-col>{{kse30.highIndex | number:'1.1-2'}}</ion-col>
+                <ion-col>{{kse30.lowIndex | number:'1.1-2'}}</ion-col>
+                <ion-col>{{kse30.lastIndex | number:'1.1-2'}}</ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item class="stock-summary">
+          <ion-row *ngIf="kmi30">
+            <ion-col col-10>
+              <ion-row>KMI 30</ion-row>
+              <ion-row>
+                
+                <div class="market-current">{{kmi30.currentIndex | number:'1.1-2'}}</div><span *ngIf="kmi30.change > 0">
+                  <ion-icon name="md-arrow-round-up" ></ion-icon>
+                </span><span *ngIf="kmi30.change < 0">
+                  <ion-icon name="md-arrow-round-down"></ion-icon>
+                </span>
+                <div class="market-up-down">{{kmi30.change | number:'1.1-2'}} ({{kmi30.percentage | number:'1.1-2'}}%)</div>
+                </ion-row>
+              <ion-row>
+                <ion-col>VOLUME</ion-col>
+                <ion-col>HIGH</ion-col>
+                <ion-col>LOW</ion-col>
+                <ion-col>PREVIOUS</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>{{kmi30.volume | number:'1.1-2'}}M</ion-col>
+                <ion-col>{{kmi30.highIndex | number:'1.1-2'}}</ion-col>
+                <ion-col>{{kmi30.lowIndex | number:'1.1-2'}}</ion-col>
+                <ion-col>{{kmi30.lastIndex | number:'1.1-2'}}</ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-list>
+      <ion-item class="disclaimer-item">
+        <ion-row >
+          <div class="date-col">
+              <ion-col col-2>Last Updated</ion-col>
+              <ion-col col-2>{{lastUpdated}}</ion-col>
+              <!-- <ion-col col-2>Market Status</ion-col>
+              <ion-col col-2 *ngIf="marketOpen" style="background:#30cc00;">Open</ion-col>
+              <ion-col col-2 *ngIf="!marketOpen" style="background:#cc0000; color: #fff;">Closed</ion-col> -->
+            
+          </div>
+          
+        </ion-row>
+      </ion-item>
+      <div class="psx-disclaimer">
+        Disclaimer:<small style="font-size: 10px; line-height: .5;">
+          PSX feed is delayed and is not intended for trading purposes. HBL AMC does not guarantee the timeliness, accuracy or completeness of any data or information.
+        </small>
+      </div>
+    </ion-grid>
+  </div>
+
+
+</ion-content>

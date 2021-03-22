@@ -1,0 +1,88 @@
+<ion-content padding class="cash-funds">
+  <div class='info-header'>
+    <div>
+      <span class="ico-dollar"></span>
+    </div>
+    <div>
+      <h3 class="hh">HBL Cash Funds</h3>
+    </div>
+  </div>
+  <div class='nav-fund-details-header'>
+    <div>
+      <p *ngFor="let user of users | slice:2:3" [title]="user.name">Fund Price as of {{user.updated_date}}</p>
+    </div>
+    <div class="image-flex">
+      <div>
+        <p>Offer (Rs)</p>
+        <h1  *ngFor="let user of users | slice:2:3" [title]="user.name">{{user.offer_price}}</h1>
+      </div>
+      <div>
+        <p>Redemption (Rs)</p>
+        <h1  *ngFor="let user of users | slice:2:3" [title]="user.name">{{user.redemption_price}}</h1>
+      </div>
+    </div>
+</div>
+  <div class="main">
+    <div class="head">
+      <p>
+        HBL Cash Fund is an open end Fund managed by HBL Asset Management Ltd, a wholly owned subsidiary
+        of HBL.
+      </p>
+    </div>
+    <div class="objective">
+      <h3>Objective</h3>
+      <p>
+        The investment objective of the Fund is to provide competitive returns to its investors through active investments in low-risk
+        portfolio of short duration, while maintaining high liquidity. The Fund will aim to maximize returns through efficient
+        utilization of investment and liquidity management tools.
+      </p>
+    </div>
+    <div class="features">
+      <h3>Features and Benefits of HBL Cash Fund</h3>
+      <ul>
+        <li>
+           <span></span>
+           It is Ideal for investors with a short-term horizon who wish to keep their savings liquid like bank deposits.
+         
+        </li>
+        <li>
+          Holding Period: No fixed term; can be redeemed at any time
+        </li>
+        <li>
+          Minimum investment Rs. 1,000
+        </li>
+        <li>
+          Subsequent investment Rs. 1,000
+        </li>
+        <li>
+          Regular Income Options: Short term needs are catered to by monthly, quarterly or annual payments
+        </li>
+        <li>
+          Bank Financing: Units can be used as a collateral against financing
+    
+        </li>
+        <li>
+          Encashment: 2-3 Days. However constitutive documents of the fund allow up to six working days.
+        </li>
+        <li>
+          Tax Credit: Can be availed by salaried and self-employed individuals as per current tax laws.
+        </li>
+        <li>
+          Capital Gains Tax (CGT) will be deducted as per current tax law
+        </li>
+        <li>
+          Front End Load: 1%
+    
+        </li>
+        <li>
+          Risk Level: Low
+        </li>
+      </ul>
+      <div>
+        <button block round ion-button (click)="sendSMS()">Contact Us to Invest</button>
+      </div>
+    </div>
+  </div>
+  
+  
+</ion-content>

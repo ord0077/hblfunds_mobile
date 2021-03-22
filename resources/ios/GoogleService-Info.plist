@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>553636484455-65pj43g8k2pofg3feqpf5kn27njgdut3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.553636484455-65pj43g8k2pofg3feqpf5kn27njgdut3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXLz0DTFF7grg46eYDh6gwzGX5JB30eiM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>553636484455</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>hbl.am</string>
+	<key>PROJECT_ID</key>
+	<string>hbl-fund-android</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hbl-fund-android.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:553636484455:ios:3cb70f5f038ea60ca08bc2</string>
+	<key>DATABASE_URL</key>
+	<string>https://hbl-fund-android.firebaseio.com</string>
+</dict>
+</plist>

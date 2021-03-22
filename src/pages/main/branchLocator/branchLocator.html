@@ -1,0 +1,51 @@
+<ion-content class="branch">
+  <div class='image-info'>
+    <div>
+      <span class="ico-handshake"></span>
+    </div>
+    <div>
+      <h1 class="hh">Branch Locator</h1>
+    </div>
+  </div>
+  
+  <ion-item>
+    <ion-label>A guide to HBL Branches offering Mutual Funds</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>City</ion-label>
+    <ion-select class="locator" [(ngModel)]="selected.region" interface="popover" (ngModelChange)="regionChange()">
+      <ion-option *ngFor="let region of regions" [value]="region">{{region}}</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Branch Name</ion-label>
+    <ion-select class="locator" [(ngModel)]="selected.branch" interface="popover" (ngModelChange)="branchChange()">
+      <ion-option *ngFor="let branch of branchesForSelect" [value]="branch">{{branch}}</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Address</ion-label>
+  </ion-item>
+  <ion-item>
+    <p *ngIf="branchSelected">{{branchSelected.BranchCompleteAddress}}</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Phone</ion-label>
+
+  </ion-item>
+  <ion-item>
+    <p *ngIf="branchSelected">{{branchSelected.PhoneNo}}</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Fax</ion-label>
+  </ion-item>
+  <ion-item>
+    <p *ngIf="branchSelected">{{branchSelected.FAX}}</p>
+  </ion-item>
+
+</ion-content>

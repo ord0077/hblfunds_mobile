@@ -1,0 +1,72 @@
+<ion-content class="calculator">
+  <div class='image-info'>
+    <div>
+      <span class="ico-tax"></span>
+    </div>
+    <div>
+      <h1 class="hh">Mutual Funds Tax Rebate Calculator</h1>
+    </div>
+  </div>
+
+  <div class="para">
+    <p>
+        Mutual fund offer considerable tax savings* for individual investors.
+        Use this calculator to find out how much tax savings you can get when investing in these schemes.
+    </p>
+    <h3>*Reference to section 62 of prevailing ITO.</h3>
+  </div>
+
+  <div class="head-calculator">
+    <p>Select your employment type</p>
+  </div>
+  <div class="calculator-options" radio-group [ngModel]="selector" (ngModelChange)="selectorChanged($event)">
+    <ion-item>
+      <ion-label>Salaried</ion-label>
+      <ion-radio [color]="myColor" item-left value="salaried"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Self Employed</ion-label>
+      <ion-radio item-left value="self-employed"></ion-radio>
+    </ion-item>
+  </div>
+  <div class="form-calculator">
+    <ion-list no-lines>
+
+      <ion-item>
+        <ion-label stacked color="white">Current Year Annual Taxable Income *</ion-label>
+        <ion-input type="number" placeholder="Rs. (e.g: 2,500,000)" name="annual" (ngModelChange)="annualChanged($event)" [ngModel]="data.annual"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Maximum Eligible Investment *</ion-label>
+        <ion-input type="number" placeholder="" name="maxInv" [(ngModel)]="data.maxInv" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Investment Made *</ion-label>
+        <ion-input type="number" placeholder="" name="invMade" (ngModelChange)="invMadeChanged($event)" [ngModel]="data.invMade" [disabled]="inactive"></ion-input>
+        
+          
+      </ion-item>
+
+      <ion-item>
+          <ion-buttons *ngIf="!toggle" end>
+              <button ion-button (click)="changeStatus()" *ngIf="inactive">Edit
+              </button>
+              <button ion-button (click)="changeStatus()" *ngIf="!inactive">Edit
+              </button></ion-buttons>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Maximum Rebate *</ion-label>
+        <ion-input type="number" placeholder="" name="maxRebate" [(ngModel)]="data.maxRebate" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label stacked>Rebate Availed *</ion-label>
+          <ion-input type="number" placeholder="" name="rebateAvl" [(ngModel)]="data.rebateAvl" disabled></ion-input>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

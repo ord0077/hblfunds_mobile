@@ -1,0 +1,39 @@
+.news {
+    
+    .segment-md .segment-button{
+        color: #15af9e;
+    }
+    .scroll-content{
+        margin-top: 100px;
+    }
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+        border-color: #15af9e;
+    }
+    p{
+        font-size: 12px!important;
+    }
+    .label-md {
+        margin: 0px 8px 13px 0;
+    }
+    ion-thumbnail img {
+        height: 75px !important;
+        width: 100px !important;
+    }
+    h3 {
+        color: #15af9e;
+        font-size: 12px;
+    }
+    h2{
+        font-size: 14px;
+        
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .item-md{
+        background-color: #f9f9f9;
+    }
+    .item-md.item-block .item-inner{
+        border: none;
+    }
+}
