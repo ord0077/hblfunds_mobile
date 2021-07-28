@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "553636484455",
+    "firebase_url": "https://hbl-fund-android.firebaseio.com",
+    "project_id": "hbl-fund-android",
+    "storage_bucket": "hbl-fund-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553636484455:android:8e95a12f78740dffa08bc2",
+        "android_client_info": {
+          "package_name": "hbl.am"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553636484455-8k4qgvo3ob9bmn5614jvjko1t28jkeok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcfcDpbd46_sUpKYQJH4FEVFTiPyAPOl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553636484455-8k4qgvo3ob9bmn5614jvjko1t28jkeok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
