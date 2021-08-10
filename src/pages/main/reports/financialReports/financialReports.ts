@@ -9,7 +9,7 @@ export class FinancialReports {
   reports;
   title;
   constructor(public app: App, private http: HttpClient , private iab: InAppBrowser) {
-    this.http.get('http://orangeroomdigital.com/hbl-financial-reports/financial-reports.php').subscribe(data => {
+    this.http.get('https://orangeroomdigital.com/hbl-financial-reports/financial-reports.php').subscribe(data => {
       this.reports = data[0];
       this.title = data[1]["heading"];
     });
